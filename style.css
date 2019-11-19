@@ -1,50 +1,59 @@
+/* mobile first (default) */
 :root {
-    font-size: 2rem;
+    font-size: 150%;
+    border: 1px solid #0cacac;
 }
 
+/* responsivity */
+
+/* 
+* mobile phone (not relevant, cause it set by default)
+*
+@media (min-width: 576px){
+    :root {
+        font-size: 2.5em;
+    }
+} 
+*/
+
+/* tablet */
+@media (min-width: 768px){
+    :root {
+        font-size: 120%;
+        border: 1px solid #2816cc;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px){
+    :root {
+        font-size: 100%;
+        border: 1px solid #a90ab8;
+    }
+}
+
+/* specific */
 
 .x-small {
-    font-size: 0.2em;
+    font-size: 0.5rem;
 }
 
 .small {
-    font-size: 0.4em;
-}
-
-.medium {
-    font-size: 0.6em;
+    font-size: 1rem;
 }
 
 .large {
-    font-size: 0.8em;
+    font-size: 1.5rem;
 }
 
 .x-large {
-    font-size: 1em;
+    font-size: 2rem;
 }
 
 footer {
     font-size: 1.5rem;
 }
 
-.descriptrion {
+.description {
     font-size: 1em;
-}
-
-/* responsivity */
-
-@media (min-width: 576px){
-    :root {
-        font-size: 2.5em;
-    }
-}
-@media (min-width: 768px){
-    :root {
-        font-size: 3em;
-    }
-}
-@media (min-width: 992px){
-    :root {
-        font-size: 3.5em;
-    }
 }
